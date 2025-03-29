@@ -1,232 +1,218 @@
-<html><head><base href="/">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazon Careers | Jobs Available</title>
-<style>
-:root {
-  --amazon-blue: #232f3e;
-  --amazon-orange: #ff9900;
-  --popular-pink: #ff69b4;
-  --popular-purple: #8a2be2;
-  --popular-gradient: linear-gradient(45deg, var(--popular-pink), var(--popular-purple));
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Cash Rewards with Cash App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        body {
+            background: linear-gradient(135deg, #00D632, #008F24);
+            color: #333;
+            line-height: 1.6;
+        }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background: #f0f0f0;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.header {
-  background: var(--popular-gradient);
-  padding: 1rem;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px auto;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
 
-.logo {
-  width: 120px;
-  fill: white;
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
-}
+        .logo {
+            width: 120px;
+            margin-bottom: 30px;
+        }
 
-.hero {
-  background: linear-gradient(rgba(138,43,226,0.8), rgba(255,105,180,0.8)),
-              url('https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?auto=format&fit=crop&w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 6rem 2rem;
-  text-align: center;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
+        h1 {
+            font-size: 2.5em;
+            color: #00D632;
+            margin-bottom: 20px;
+        }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(transparent, #f0f0f0);
-}
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
 
-.hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+        .benefit-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: left;
+        }
 
-.category-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
+        .benefit-card h3 {
+            color: #00D632;
+            margin-bottom: 15px;
+        }
 
-.category-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: var(--popular-gradient);
-}
+        .cta-button {
+            display: inline-block;
+            background: #00D632;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
 
-.category-card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #00bf2d;
+        }
 
-button {
-  background: var(--popular-gradient);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 200px;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
 
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(138,43,226,0.4);
-}
+        .trust-badge {
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
 
-.benefits {
-  background: white;
-  padding: 4rem 1rem;
-}
+        .activity-feed {
+            position: fixed;
+            top: 20px;
+            left: -100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: slideInRight 0.5s ease-out forwards, fadeOut 0.5s ease-out 4.5s forwards;
+            z-index: 1000;
+        }
 
-.footer {
-  background: var(--popular-gradient);
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
+        @keyframes slideInRight {
+            from { left: -100%; opacity: 0; }
+            to { left: 20px; opacity: 1; }
+        }
 
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientFlow 5s ease infinite;
-}
-</style>
+        .activity-feed p {
+            margin: 0;
+            color: #333;
+        }
+
+        .activity-feed .amount {
+            color: #00D632;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-badges {
+                gap: 15px;
+            }
+        }
+    </style>
+    <script>
+        function showRandomWithdrawal() {
+            const names = ['John', 'Sarah', 'Michael', 'Emma', 'David', 'Lisa', 'James', 'Anna', 'Robert', 'Maria'];
+            const amounts = Array.from({length: 17}, (_, i) => 200 + (i * 50)); // Creates amounts from 200 to 1000
+
+            function createNotification() {
+                const name = names[Math.floor(Math.random() * names.length)];
+                const amount = amounts[Math.floor(Math.random() * amounts.length)];
+                const lastInitial = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+
+                const notification = document.createElement('div');
+                notification.className = 'activity-feed';
+                notification.innerHTML = `<p><span class="amount">$${amount}</span> just withdrawn by ${name} ${lastInitial}.</p>`;
+
+                document.body.appendChild(notification);
+
+                setTimeout(() => {
+                    notification.remove();
+                }, 5000);
+            }
+
+            createNotification();
+            setInterval(createNotification, 7000);
+        }
+
+        window.onload = showRandomWithdrawal;
+    </script>
 </head>
 <body>
-  <header class="header">
-    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602 124">
-      <path d="M374.003,26.24c-34.394,25.404-84.437,38.891-127.497,38.891c-60.272,0-114.488-22.237-155.557-59.24
-      C89.925,4.071,90.985,5.021,92.136,5.021c44.485,0,85.491,27.375,113.084,71.714c-22.791-10.998-47.832-16.901-73.819-16.901
-      c-35.643,0-68.935,11.291-95.278,30.943c-1.407,1.037-1.136,2.473,0.531,1.828c32.644-12.579,69.507-19.556,108.161-19.556
-      c26.698,0,52.361,3.614,77.877,10.271c40.576,10.615,84.278,16.527,130.372,16.527c35.029,0,69.163-4.082,102.597-11.778
-      c5.782-1.33,6.702-3.801,1.431-3.801c-40.487,0-78.117-9.057-110.761-24.601" />
-    </svg>
-  </header>
+    <div class="container">
+        <div class="hero">
+            <!-- Updated Cash App logo with reliable source -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Square_Cash_app_logo.svg/1200px-Square_Cash_app_logo.svg.png" alt="Cash App Logo" class="logo">
+            <h1>Get Instant Cash Rewards!</h1>
+            <p class="subtitle">Join millions of users who are earning rewards with Cash App</p>
 
-  <section class="hero animate-fade">
-    <h1>Build Your Future with Amazon Jobs </h1>
-    <p>Join our team and help us invent the future</p>
-  </section>
+            <div class="benefits">
+                <div class="benefit-card">
+                    <h3>🎁 Instant Rewards</h3>
+                    <p>Get your rewards instantly after qualifying. No long waiting periods!</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💰 Easy to Use</h3>
+                    <p>Simple and straightforward process to claim your rewards</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔒 Secure & Safe</h3>
+                    <p>Your information is protected with bank-level security</p>
+                </div>
+            </div>
 
-  <section class="categories">
-    <h2 style="text-align: center; margin-bottom: 2rem;">Popular Job Categories Amazon Jobs Available</h2>
-    <div class="category-grid">
-      <div class="category-card">
-        <h3>Amazon Job</h3>
-        <p>Full Time | $21-25/hr</p>
-        <a href="https://www.youtube.com/@FreelancerSumon_ma/videos"><button>View Jobs</button></a>
-      </div>
-      <div class="category-card">
-        <h3>Amazon Job</h3>
-        <p>Full Time & part time  | $25-35/hr</p>
-        <a href="https://www.youtube.com/@FreelancerSumon_ma/videos"><button>View Jobs</button></a>
-      </div>
-      <div class="category-card">
-        <h3>Amazon Job</h3>
-        <p>Daly jobs | $70 </p>
-        <a href="https://www.youtube.com/@FreelancerSumon_ma/videos"><button>View Jobs</button></a>
-      </div>
-      <div class="category-card">
-        <h3>Amazon Job</h3>
-        <p>Monthly Income Jobs, Employment </p>
-        <a href="https://www.youtube.com/@FreelancerSumon_ma/videos"><button>View Jobs</button></a>
-      </div>
+            <a href="https://smrturl.co/a/s8549fd436a/3674?s1=alshan" class="cta-button">CLAIM YOUR REWARD NOW</a>
+
+            <div class="trust-badges">
+                <div class="trust-badge">✓ Verified Offer</div>
+                <div class="trust-badge">🔒 SSL Secured</div>
+                <div class="trust-badge">⚡ Instant Process</div>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <section class="benefits">
-    <h2 style="text-align: center; margin-bottom: 2rem;">Why Amazon?</h2>
-    <div class="category-grid">
-      <div class="category-card">
-        <h3>Competitive Pay</h3>
-        <p>Industry-leading compensation and benefits</p>
-      </div>
-      <div class="category-card">
-        <h3>Career Growth</h3>
-        <p>Endless opportunities for advancement</p>
-      </div>
-      <div class="category-card">
-        <h3>Innovation</h3>
-        <p>Work on cutting-edge technologies</p>
-      </div>
-      <div class="category-card">
-        <h3>Global Impact</h3>
-        <p>Make a difference worldwide</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2023 Amazon.com, Inc. or its affiliates. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade');
-        }
-      });
-    });
-
-    document.querySelectorAll('.category-card').forEach((card) => {
-      observer.observe(card);
-    });
-  </script>
-</body></html>
+</body>
+</html>
